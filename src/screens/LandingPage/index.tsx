@@ -134,16 +134,16 @@ export function LandingPage() {
         {/* Custom Modal */}
         {isModalOpen && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-4">
-            <div className="flex flex-col sm:flex-row w-full max-w-[688px] rounded-lg shadow-lg relative">
+            <div className="flex flex-col sm:flex-row w-full max-w-[688px] h-[513px] rounded-lg shadow-lg relative">
               {/* Left Side - Gold Background */}
-              <div className="bg-[#D59D5E] text-black w-full sm:w-1/2 p-6 sm:p-8 rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none">
+              <div className="bg-[#D59D5E] text-black items-start justify-center flex flex-col w-full sm:w-1/2 p-6 sm:p-8 rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none">
                 <button
                   onClick={() => setIsModalOpen(false)}
                   className="absolute top-2 right-2 text-xl font-bold text-black"
                 >
                   &times;
                 </button>
-                <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-bold mb-4 text-white">
+                <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-bold mb-4 text-white ">
                   Stay In The Loop!
                 </h2>
                 <p className="mb-6 text-base sm:text-lg lg:text-[24px] text-white">
@@ -153,7 +153,7 @@ export function LandingPage() {
               </div>
 
               {/* Right Side - White Background */}
-              <div className="bg-white w-full sm:w-1/2 p-6 sm:p-8 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none">
+              <div className="bg-white w-full  sm:w-1/2 p-6 sm:p-8 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none items-start justify-center flex flex-col">
                 <h2 className="text-xl sm:text-2xl font-bold mb-4 text-black">Join Now!</h2>
                 <form className="space-y-4" onSubmit={handleSubmit}>
                   <div>
